@@ -14,7 +14,7 @@ fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city='+city, opti
     .then(response=>response.json())
     .then((response)=>{
 
-        cloud_pct.innerHTML=response.cloud_pct
+    
         temp.innerHTML=response.temp
         
         feels_like.innerHTML=response.feels_like
@@ -74,6 +74,13 @@ fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city='+city, opti
         var video= document.getElementsByTagName("video")[0];
         video.setAttribute("src","cold.mp4");
     }
+    else if(pd=="normal"){
+        var image = document.getElementById("cloud");
+        image.setAttribute("src","snow.png");
+        var video= document.getElementsByTagName("video")[0];
+        video.setAttribute("src","cold.mp4");
+    }
+
 
 
   
@@ -82,7 +89,7 @@ fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city='+city, opti
 	.catch(err=>console.error(err))
     var ele = document.getElementById("my");
     ele.style.opacity="1";
-    ele.style.top="200px";
+    ele.style.top="180px";
 
 
 
@@ -131,9 +138,11 @@ function predictWeather(temperature,humid,winds) {
         weatherCondition = 'Cloudy';
     } else if (windyCondition(winds)) {
         weatherCondition = 'Windy';
-    } else if (temperature>20 && temperature<=32 && winds<10 && humid<60 ){
+    } else if(temperature>20 && temperature<=32 && winds<10 && humid<60 ){
         weatherCondition = 'Sunny';
     }
+    else 
+    weatherCondition='normal';
 return weatherCondition;
    
 }
