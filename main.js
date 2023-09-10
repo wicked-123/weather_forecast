@@ -89,7 +89,7 @@ fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city='+city, opti
 	.catch(err=>console.error(err))
     var ele = document.getElementById("my");
     ele.style.opacity="1";
-    ele.style.top="180px";
+    ele.style.top="10em";
 
 
 
