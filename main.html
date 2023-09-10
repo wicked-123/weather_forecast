@@ -1,107 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weather</title>
-    <link rel="stylesheet" href="weath.css"><link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat&family=Plus+Jakarta+Sans:wght@500&family=Rammetto+One&display=swap');
-    </style>
-<body >
-  <video autoplay loop muted plays-inline id="video-background">
-    <source src="" type="video/mp4" id="video"></video>
-  <div style="display: flex;align-content: center;">
-<div class="heading"> Weatherpedia</div>
-<div class="bef" style="position: relative;">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather</title>
+  <link rel="stylesheet" href="weath.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat&family=Plus+Jakarta+Sans:wght@500&family=Rammetto+One&display=swap');
+  </style>
 
-<div class="form">
-  <input type="search" id="city" class="searcht" placeholder="enter city">
-  <i class="fa fa-search" id="btnn">
-    <img src="1.png" style="width:30px;">
-  </i>
-  </div></div>
-</div>
-
-  
-
+<body>
+  <!--<video autoplay loop muted plays-inline id="video-background">
+    <source src="" type="video/mp4" id="video"></video>-->
+  <div class="main">
+    <div class="heading">
+      Weatherpedia
+    </div>
+    <div class="form">
+      <input type="search" id="city" class="searcht" placeholder="enter city">
+      <i class="fa fa-search" id="btnn">
+        <img src="1.png" style="width:30px;">
+      </i>
+    </div>
+  </div>
   <div class="et" id="et">
     <div class="etc">
-      enter the city 
+      enter the city
     </div>
-    <input type="text" id='city1' class="search" >
+    <input type="text" id='city1' class="search">
     <button type="submit" id="submit">
       submit
     </button>
   </div>
-  <div class="report" id="my" >
-    <div style="width: 200px;"> weather of <br> <span id="cityName">
-      </span>
-      <dov style="display: flex;">
-      <div id="temp">
-      
+  <div class="report" id="my">
+    <div class="info">
+      <div style="width: 200px;">
+        weather of
       </div>
-      <span id="span"> °C</span>
+      <div id="cityName">
+        dfvf
+      </div>
+      <dov style="display: flex; margin-top: 50px;">
+        <div id="temp">
+          sffsd
+        </div>
+        <span id="span"> °C</span>
       </dov>
       <div id="time">
       </div>
-    
     </div>
-
-    <div>
-      <img class="cloud" src="cloudy.png" id="cloud">
-      <div class="flex" style="margin-top: 20px; padding-top: 50px;">
-        <div class="align">feels like  </div>
-        <div id="feels_like" class="align1"></div></div>
+    <div style="flex: 1;">
+      <img class="cloud" src="sunny.png" id="cloud">
+      <div class="flex" style="font-size: 200%;">
+        <div class="alignv">feels like </div>
+        <div id="feels_like" class="align1">csdf</div>
+      </div>
     </div>
     <div class="table">
-    <div style="margin-left: 20px; gap: 10px; font-size: 70px;height: 90%;">
-      <div class="align weatde" > weather details</div>
-      
-          <div class="flex">
-            <img src="humdi.png"><div class="align">humidity </div>
-            <div id="humidity" class="align1"></div></div>
-            
-            <div class="flex">
-              <img src="htemp.png"><div class="align">Max temp</div>
-              <div id="min_temp" class="align1"></div></div><div class="flex">
-                <img src="ltem.png"><div class="align">min temp</div>
-                <div id="max_temp" class="align1 "></div></div><div class="flex">
-                  <img src="ws.png"><div class="align">wind speed</div>
-                  <div id="wind_speed" class="align1"></div></div><div class="flex">
-                    <img src="wd.png" style="width: 0.75em;"><div class="align">wind degrees </div>
-                    <div id="wind_degrees" class="align1"></div></div>
-                    <div class="flex">
-                      <img src="sri.png" style="width: 0.75em;"><div class="align">sunrise </div>
-                      <div id="sunrise" class="align1"></div></div>
-                      <div class="flex">
-                        <img src="ss.png" style="position: relative; height: 50%;width: 0.75em;"><div class="align">sunset </div>
-                        <div id="sunset" class="align1"></div>
-      
-      
-      <br></div>
+      <div class="align weatde"> weather details</div>
+      <div class="flex">
+        <img src="humdi.png">
+        <div class="align">humidity </div>
+        <div id="humidity" class="align1"></div>
+      </div>
 
+      <div class="flex">
+        <img src="htemp.png">
+        <div class="align">Max temp</div>
+        <div id="min_temp" class="align1"></div>
+      </div>
+      <div class="flex">
+        <img src="ltem.png">
+        <div class="align">min temp</div>
+        <div id="max_temp" class="align1 "></div>
+      </div>
+      <div class="flex">
+        <img src="ws.png">
+        <div class="align">wind speed</div>
+        <div id="wind_speed" class="align1"></div>
+      </div>
+      <div class="flex">
+        <img src="wd.png">
+        <div class="align">wind degrees </div>
+        <div id="wind_degrees" class="align1"></div>
+      </div>
+      <div class="flex">
+        <img src="sri.png">
+        <div class="align">sunrise </div>
+        <div id="sunrise" class="align1"></div>
+      </div>
+      <div class="flex">
+        <img src="ss.png">
+        <div class="align">sunset </div>
+        <div id="sunset" class="align1"></div>
+
+      </div>
     </div>
-
-  </div>
   </div>
   <div class="endb">
     <a href="https://www.linkedin.com/in/dasari-vignan-bb3500223/">
-        <img src="linked in.png">
+      <img src="linked in.png">
     </a>
-  <div class="end">
-Dasari Vignan
+    <div class="end">
+      Dasari Vignan
+    </div>
+    <a href="https://github.com/wicked-123">
+      <img src="git.png">
+    </a>
   </div>
-  <a href="https://github.com/wicked-123">
-    <img src="git.png">
-</a>
-  </div>
-  
- 
-<script src="main.js">
 
-</script>
+  <script src="main.js"></script>
 </body>
+
 </html>
