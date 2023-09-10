@@ -3,6 +3,10 @@
     font-size: 300%;
 
 }
+.main{
+    display: flex;
+    justify-content: space-between;
+}
 .na{
     display: flex;
 }
@@ -26,22 +30,19 @@
     height: 3em;
 }
 
-
 .form{
-    top: 25px;
-    position: relative;
-    left:70em;
-    transform: translate(-50%,-50%);
-    transition: all 1s;
-    width: 50px;
-    height: 50px;
-    background: rgba(0, 0, 0, 0);
-    box-sizing: border-box;
-    border-radius: 25px;
-    border: 0.2px solid rgb(0, 0, 0);
-    padding: 5px;
-    background-color:rgba(133, 85, 22, 0);
-}
+    margin-top: 50px;
+        transform: translate(-50%,-50%);
+        transition: all 1s;
+        width: 50px;
+        height: 50px;
+        background: rgba(0, 0, 0, 0);
+        box-sizing: border-box;
+        border-radius: 25px;
+        border: 0.2px solid rgb(0, 0, 0);
+        padding: 5px;
+        background-color:rgba(133, 85, 22, 0);
+    }
 
 .form input{
     position: absolute;
@@ -111,7 +112,6 @@ body{
     background-image: url(2.jpg);
     background-size: 250vh 100vh;
     overflow: hidden;
-position: relative;
 font-family: 'Montserrat', sans-serif;
 
 }
@@ -119,25 +119,27 @@ font-family: 'Montserrat', sans-serif;
 .form:valid a {
   display: block;
 }
-
+.info{
+    display: flex;
+    flex-direction: column;
+}
 .report{
     display: flex;
     flex-direction: row;
-    position: relative;
     border-radius: 50px;
-    border: 0px solid
+    border: 1px solid
     black;
+    position: relative;
     padding: 50px;
     margin: 15px;
-  top: 400px ;
-  width: 1620px;
-height: 400px;
+top:100vh ;
+  width: 90%;
+min-height: 400px;
 background-color: rgba(107, 107, 107, 0.007);
 backdrop-filter: blur(10px);
 box-shadow: 0 0 20px rgba(99, 98, 98, 0.377);
+transition: 1s;
 opacity: 0;
-transition: ease-out 1s;
-overflow: hidden;
 z-index: 2;
 }
 .flex{
@@ -145,35 +147,38 @@ z-index: 2;
     gap: 50px;
 
 }
-#cityName{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
-    font-weight: bold;
+#time{
+    padding-top: 2em;
+    padding-left:50px;
+    font-size: 30px;
+    color: white;
+
 }
 .cloud{
-    width: 600px;
+    width: 30em;
+    min-width: 20em;
     padding-top: 50px;
-    padding-left: 100px;
+
+}
+.align{
+    color:white;
+    font-size: 150%;
 }
 
+#cityName{
+    font-family: 'Montserrat', sans-serif;
+    font-size:50px;
+    font-weight: bold;
+}
 #temp{
-    padding-top: 100px;
     font-size: 150px;
     font-weight: 650;
 }
 #span{
-    padding-top: 100px;
+
     font-size: 150px;
 }
-.align{
-    display: inline-block;
-    text-align: center;
-    padding-top: 0.5em;
-    font-size: 25px;
-    width: 200px;
 
-
-}
 .align1{
     display: inline-block;
     text-align: center;
@@ -183,23 +188,25 @@ z-index: 2;
     color:#ffffff ;
 }
 .table{
-margin-left:200px;
-backdrop-filter: none;
-margin-bottom: 10pxpx;
-display: block;
-padding-bottom: 0;
-display: flex;
-justify-content: center; 
-align-items: center;
-border-radius:20px ;
-height: 100%;
-font-size: 80%;
-backdrop-filter: opacity(70%);
-}
+    margin-left:3em;
+    display: block;
+    border: solid black 1px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius:20px ;
+min-width: 35em;
+    font-size: 80%;
+    backdrop-filter: opacity(70%);
+    flex-direction: column;
+    order: 1;
+    }
 .weatde{
     color: aliceblue; 
   
-     width: 320px;text-align: center;
+     width: 10em
+     ;text-align: center;
       display: flex;
       padding-left: 30%;
       background-size: 200px; 
@@ -209,20 +216,18 @@ backdrop-filter: opacity(70%);
       
 }
 .et{
-display: flex;
-flex-direction:column;
-align-items: center;
-justify-content: center;
-z-index: 1;
-position: relative;
-overflow:hidden;
-}
-.etc{
-    font-family: 'Kaushan Script', cursive;
-    font-size: 150px;
-    padding-top: 200px;
-
-}
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    }
+    .etc{
+        font-family: 'Kaushan Script', cursive;
+        font-size: 550%;
+        padding-top: 10%;
+    
+    }
 #city1{
     width: 600px;
     height: 55px;
@@ -244,10 +249,15 @@ border: none ;
 #submit{
     margin-top: 10px;
  background: none;
- width: 300px;
  height:50px;
  font-size: 30px;
  border-radius: 50px;
+ min-width: 10%;
+}
+#submit:focus{
+    background-color: black;
+    color: white;
+    font-weight: 100;
 }
 .end{
 
@@ -258,9 +268,7 @@ border: none ;
     color: white;
 
 }
-#sunset{
-    height: 50%;
-}
+
 .endb{
     position: fixed;
     display: flex;
@@ -274,10 +282,4 @@ a img{
     
 
 }
-#time{
-    padding-top: 100px;
-    padding-left:50px;
-    font-size: 30px;
-    color: white;
 
-}
