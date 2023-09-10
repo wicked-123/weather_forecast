@@ -145,6 +145,7 @@ z-index: 2;
 .flex{
     display: flex;
     gap: 50px;
+    width: fit-content;
 
 }
 #time{
@@ -188,28 +189,27 @@ z-index: 2;
     color:#ffffff ;
 }
 .table{
-    margin-left:3em;
-    display: block;
-    border: solid black 1px;
+        margin-left:3em;
     padding-bottom: 0;
     display: flex;
     justify-content: center; 
     align-items: center;
     border-radius:20px ;
-min-width: 35em;
+    background-color: rgba(0, 0, 0, 0.507);
+min-width: 40em;
     font-size: 80%;
-    backdrop-filter: opacity(70%);
+    backdrop-filter: opacity(20%);
     flex-direction: column;
     order: 1;
     }
 .weatde{
-    color: aliceblue; 
-  
-     width: 10em
-     ;text-align: center;
+    color: black; 
+  text-align: center;
+  align-items: center;
+  align-content: center;
+
+     text-align: center;
       display: flex;
-      padding-left: 30%;
-      background-size: 200px; 
       padding-bottom: 5px;
       margin-bottom: 20px;
       border-bottom: 2px solid black;
@@ -282,4 +282,11 @@ a img{
     
 
 }
+.perfect{
+    width: 150px;
+}
+.flex img{
 
+        filter: grayscale(100%) invert(100%);
+      
+}
