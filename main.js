@@ -99,6 +99,7 @@ var searcht=document.getElementsByClassName('searcht')[0];
 searcht.addEventListener('keydown', (e) => {
     if(e.key=='Enter'){
         getWeather(city.value)
+        document.getElementById("et").remove();
     }
     
 });
@@ -110,6 +111,7 @@ submit.addEventListener("click",(e)=>{
 })
 btnn.addEventListener("click",(e)=>{
     getWeather(city.value)
+    document.getElementById("et").remove();
 })
 var search=document.getElementsByClassName('search')[0];
 
